@@ -2,10 +2,4 @@
 layout: default
 ---
 
-
-**LunaONE GmbH**
-
-<u>Kontakt</u>  
-E-Mail: office@lunaone.de  
-Telefon: 05261 943 043
-
+LunaONE helps businesses write better software. We offer on-site and remote development services and training.

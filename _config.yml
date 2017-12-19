@@ -6,4 +6,8 @@ description: >-
 theme: minima
 
 header_pages:
-  - null
+  - work.md
+  - values.md
+  - contact.md
+
+permalink: /:categories/:title

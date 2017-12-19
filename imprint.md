@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Impressum
+# Contact
 
 **LunaONE GmbH**  
 Mildred-Scheel-Bogen 64, 80804 München
