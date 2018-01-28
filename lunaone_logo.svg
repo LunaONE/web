@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="140px" viewBox="0 0 180 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>lunaone_logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-2" fill="#FFFFFF" x="-55" y="-82" width="298" height="272"></rect>
+        <polygon id="links-vorne" fill="#5974A2" transform="translate(133.000000, 92.000000) scale(1, -1) translate(-133.000000, -92.000000) " points="97 46 169 91 169 138 97 93"></polygon>
+        <polygon id="Rectangle" fill="#3A4E6B" transform="translate(133.000000, 47.000000) scale(1, -1) translate(-133.000000, -47.000000) " points="97 46 169 1 169 48 97 93"></polygon>
+        <polygon id="Rectangle" fill="#FFE24C" points="12 46 84 1 84 48 12 93"></polygon>
+        <polygon id="links-vorne" fill="#FFCB02" points="12 46 84 91 84 138 12 93"></polygon>
+    </g>
+</svg>

@@ -28,7 +28,7 @@ a:hover {
 }
 
 header, footer, .page-content > .wrapper {
-    padding: 0.75em $side-padding;
+    padding: 0.75rem $side-padding;
     max-width: $max-width;
     margin: 0 auto;    
 }
@@ -39,6 +39,11 @@ header > .wrapper, footer > .wrapper  {
     align-items: center;
 }
 
+.logo-span {
+  display: flex;
+  align-items: center;
+}
+
 header .page-link {
     padding-left: 2em;
 }
@@ -47,10 +52,26 @@ header .page-link {
     min-height: 70vh;
 }
 
+.header-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  border-bottom: 1px solid #e8e8e8;
+  height: calc(1.5rem + 50px);
+}
+
 .page-content {
-    border-top: 1px solid #e8e8e8;
     background-color: #fdfdfd;
     border-bottom: 1px solid #e8e8e8;
+}
+
+.page-content h1 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: calc(1.5rem + 50px + 1px); // header padding + header height + header bottom border
+  background-color: #fdfdfd;
+  border-bottom: 0.5px solid #c9c9c9;
 }
 
 // From "Minima" Theme
