@@ -16,6 +16,8 @@ body {
 
 .site-title {
     font-size: 1.3em;
+    display: flex;
+    align-items: center;
 }
 
 a {
@@ -37,11 +39,6 @@ header > .wrapper, footer > .wrapper  {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo-span {
-  display: flex;
-  align-items: center;
 }
 
 header .page-link {
@@ -158,6 +155,14 @@ $on-laptop:        800px !default;
       input:checked ~ .trigger {
         display: block;
         padding-bottom: 5px;
+      }
+
+      div.trigger {
+        position: fixed;
+        top: 60px;
+        right: 0px;
+        background-color: white;
+        padding-right: 20px;
       }
   
       .page-link {

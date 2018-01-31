@@ -4,9 +4,11 @@
       {% assign default_paths = site.pages | map: "path" %}
       {% assign page_paths = site.header_pages | default: default_paths %}
       
-      <span class="logo-span">
-        <img src="./lunaone_logo.svg" height="50">
-        <a class="site-title" href="{{ "/" | relative_url }}">LunaONE</a>
+      <span>
+        <a class="site-title" href="{{ "/" | relative_url }}">
+          <img src="./lunaone_logo.svg" height="50">
+          LunaONE
+        </a>
       </span>
     
       <nav class="site-nav">
