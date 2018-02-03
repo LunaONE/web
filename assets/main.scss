@@ -74,7 +74,7 @@ header .page-link {
     border-bottom: 1px solid #e8e8e8;
 
     img {
-      max-width: $max-width;
+      max-width: 100%;
     }
 }
 
@@ -97,7 +97,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  height: 35px;
+  height: 28px;
 }
 
 header div.wrapper {
@@ -134,7 +134,7 @@ $on-laptop:        800px !default;
   }
   
   .logo {
-    display: none;
+    // display: none;
     // height: 20px;
   }
 
