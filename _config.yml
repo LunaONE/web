@@ -6,8 +6,10 @@ description: >-
 # theme: minima
 
 header_pages:
-  - work.md
-  - values.md
+  - expertise.md
+  - services.md
+  - about-us.md
+  - blog.md
   - contact.md
 
 permalink: /:categories/:title
