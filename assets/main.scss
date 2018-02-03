@@ -3,7 +3,7 @@
 ---
 
 $side-padding: 1em;
-$max-width: 900px;
+$max-width: 760px;
 
 body {
     background-color: #fff;
@@ -12,6 +12,8 @@ body {
     padding: 0;
     grid-column-gap: 1em;
     margin: 0;
+
+    color: #222222;
 }
 
 .site-title {
@@ -26,7 +28,8 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+  color: rgb(53, 53, 53);
+  text-decoration: underline;
 }
 
 header, footer, .page-content > .wrapper {
@@ -47,6 +50,10 @@ header .page-link {
 
 .page-content {
     min-height: 70vh;
+
+    a {
+      text-decoration: underline;
+    }
 }
 
 .header-container {
@@ -61,6 +68,10 @@ header .page-link {
 .page-content {
     background-color: #fdfdfd;
     border-bottom: 1px solid #e8e8e8;
+
+    img {
+      max-width: $max-width;
+    }
 }
 
 .page-content h1 {
@@ -72,8 +83,13 @@ header .page-link {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: rgb(43, 43, 43);
   font-weight: normal;
+  // font-style: italic;
+  // font-family: 'Baskerville'
+}
+
+h2, h3, h4, h5, h6 {
+  padding-top: 1em;
 }
 
 .logo {

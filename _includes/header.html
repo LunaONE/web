@@ -6,13 +6,33 @@
       
       <span>
         <a class="site-title" href="{{ "/" | relative_url }}">
-          <img src="./lunaone_logo.svg" class="logo">
-          <span class="title-name">LunaONE</span>
+          <!-- <img src="./lunaone_logo.svg" class="logo"> -->
+          <!-- <img src="./alt_logo.svg" class="logo"> -->
+          <!-- <img src="./logo3.svg" class="logo"> -->
+          <!-- <img src="./logo_5.svg" class="logo"> -->
+          <!-- <img src="./logo_gs_i.svg" class="logo"> -->
+          <!-- <img src="./logo_alt.svg" class="logo"> -->
+          <!-- <img src="./logo4.svg" class="logo"> -->
+
+          <img src="./logo_mne.svg" class="logo" style="height: 28px">
+
+          <!-- <img src="./logo6.svg" class="logo">
+          <span class="title-name">LunaONE</span> -->
         </a>
       </span>
     
       <nav class="site-nav">
         <div class="trigger">
+          
+          <!-- <div>
+            Header
+            <ul>
+              <li>A</li>  
+              <li>B</li>  
+              <li>C</li>  
+            </ul>
+          </div> -->
+
           {% for path in page_paths %}
             {% assign my_page = site.pages | where: "path", path | first %}
             {% if my_page.title %}
