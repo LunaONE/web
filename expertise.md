@@ -10,7 +10,7 @@ Our recent project experiences include the following types of products:
 
 ### Single Page Web Applications
 
-Be it porting legacy-platform based applications from `Win32` or Flash or creating entirely new web applications from scratch: Our standards and the demands of the modern user require a diligent approach in order to be reliable, user-friendly, and consistent. In order to achieve this, we built on mature open-source projects like [TypeScript](#TypeScript) and [React](#React) with a proven combination of sound architectural designs as well as permanent tool-driven checks of every component of the final product.
+Be it porting legacy-platform based applications from `Win32` or Flash or creating entirely new web applications from scratch: Our standards and the demands of the modern user require a diligent approach in order to be reliable, user-friendly, and consistent. In order to achieve this, we built on mature open-source projects such as [TypeScript](#TypeScript) and [React](#React) with a proven combination of sound architectural designs as well as permanent tool-driven checks of every component of the final product.
 
 <span class="tt">TypeScript</span>
 <span class="tt">React</span>
@@ -20,7 +20,7 @@ Be it porting legacy-platform based applications from `Win32` or Flash or creati
 
 ### Real-Browser Testing
 
-A common pain point in current quality assurance approaches in testing complex applications and games, is that a lot of manual labor is expended on the ever same–and most of the time working–core functionality, while newly developed and advanced features only get what's left in the time budget. We can alleviate this pain by providing the necessary tools and expertise to fully test any kind of application without human intervention, so your QA team can focus on the areas where the feel is equally important to the functionality or where it's economically unwise to automate.
+A common weakness in today's quality assurance approaches in testing complex applications and games, is that extensive manual labor is lost on the ever same–and most of the time working–core functionality, while newly developed and advanced features only get what's left of the time budget. We alleviate this pain by providing the necessary tools and expertise to fully test any application without human intervention. As a result your QA team can focus on the areas where the feel is equally important to the functionality or where it's economically unwise to automate.
 
 <span class="tt">Selenium</span>
 <span class="tt">Docker</span>
