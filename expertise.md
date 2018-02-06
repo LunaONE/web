@@ -10,7 +10,7 @@ Our recent project experiences include the following types of products:
 
 ### Single Page Web Applications
 
-Be it porting legacy-platform based applications from `Win32` or Flash or creating entirely new web applications from scratch: Our standards and the demands of the modern user require a diligent approach in order to be reliable, user-friendly, and consistent. In order to achieve this, we build on mature open-source projects like [TypeScript](#TypeScript) and [React](#React) with a proven combination of sound architectural designs as well as permanent tool-driven checks of every component of the final product.
+Be it porting legacy-platform based applications from `Win32` or Flash or creating entirely new web applications from scratch: Our standards and the demands of the modern user require a diligent approach in order to be reliable, user-friendly, and consistent. In order to achieve this, we built on mature open-source projects like [TypeScript](#TypeScript) and [React](#React) with a proven combination of sound architectural designs as well as permanent tool-driven checks of every component of the final product.
 
 <span class="tt">TypeScript</span>
 <span class="tt">React</span>
