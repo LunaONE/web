@@ -249,3 +249,16 @@ $on-laptop:        800px !default;
   line-height: 25px;
   border-radius: 15px;
 }
+
+.introHeader {
+  position: relative;
+
+  .headerText {
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+      right: 100px;
+      color: white;
+      font-size: 2em;
+  }
+}
