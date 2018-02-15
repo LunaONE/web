@@ -10,7 +10,7 @@ Our recent project experiences include the following types of products:
 
 ### Single Page Web Applications
 
-Be it porting legacy-platform based applications from `Win32` or Flash or creating entirely new web applications from scratch: Our standards and the demands of the modern user require a diligent approach in order to be reliable, user-friendly, and consistent. In order to achieve this, we built on mature open-source projects such as [TypeScript](#TypeScript) and [React](#React) with a proven combination of sound architectural designs as well as permanent tool-driven checks of every component of the final product.
+The browser has been emerging as a great first platform for desktop-class applications. For our clients we ported legacy applications from Flash and Windows to the web and also created entirely new web applications from scratch: Our standards and the demands of the modern user require a diligent approach in order to be reliable, user-friendly, and consistent. In order to achieve this, we built on mature open-source projects such as [TypeScript](#TypeScript) and [React](#React) with a proven combination of sound architectural designs as well as permanent tool-driven checks of every component of the final product.
 
 <span class="tt">TypeScript</span>
 <span class="tt">React</span>
@@ -20,7 +20,8 @@ Be it porting legacy-platform based applications from `Win32` or Flash or creati
 
 ### Real-Browser Testing
 
-A common weakness in today's quality assurance approaches in testing complex applications and games, is that extensive manual labor is lost on the ever same–and most of the time working–core functionality, while newly developed and advanced features only get what's left of the time budget. We alleviate this pain by providing the necessary tools and expertise to fully test any application without human intervention. As a result your QA team can focus on the areas where the feel is equally important to the functionality or where it's economically unwise to automate.
+Software deployed to constantly changing consumer platforms needs permanent testing during development and even after the release, to ensure that the production deployment behaves as expected. For our clients we have implemented automated, real-browser-based test setups which continually verify the software's behavior. This is not only used for line of business applications, but also games which were historically hard to test in an automated way due to their visual richness and animations.  
+Automating testing of all of the core functionalities frees QA from repetitive testing of the ever same functionality (which usually works), and allows them to focus on futures being in development as well as special customer integration projects, which might better be handled manually.
 
 <span class="tt">Selenium</span>
 <span class="tt">Docker</span>
@@ -29,7 +30,7 @@ A common weakness in today's quality assurance approaches in testing complex app
 
 ### Scraping
 
-The publicly accessible web contains a trove of valuable information for anyone. We help businesses acquire and explore information regarding customer demand and competitor offerings and bring them into a structured form for their business development analytics.
+The publicly accessible web contains a trove of valuable information for anyone. We make this data available to our business clients, providing them with sanitized data about competitor pricing and customer demand. This allows them to focus on gaining insights from that data, instead of spending time on its acquisition.
 
 <span class="tt">Go</span>
 <span class="tt">Node.js</span>
