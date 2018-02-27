@@ -15,5 +15,4 @@ Umsatzsteueridentifikationsnummer: DE314750570
 <br>  <br>
 E-Mail: office@lunaone.de
 <br>
-Telefon: 05261 943 043
-
+Telefon: 089 21539697
