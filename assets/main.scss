@@ -311,9 +311,17 @@ li:not(:last-child) {
   filter: grayscale(90%);
 }
 
+.header > .headerText {
+  display: none;
+}
+
 @media (orientation: landscape) {
   .introHeader > .headerText { 
     display: none;
+  }
+
+  .header > .headerText {
+    display: block;
   }
 
   .headerText {
