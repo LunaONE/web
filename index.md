@@ -3,10 +3,7 @@ layout: default
 ---
 
 <div class="header">
-    <div class="introHeader">
-        <img src="./timm_head_web.jpg">
-        <span class="headerText">Helping Businesses<br>Ship Great Software</span>
-    </div>
+ 
 
     <span class="headerText">Helping Businesses<br>Ship Great Software</span>
 
