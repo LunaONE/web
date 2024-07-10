@@ -1,9 +1,11 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
   <title>Flutter | LunaONE GmbH</title>
   <meta name="robots" content="noindex">
   <link rel="canonical" href="https://www.lunaone.de/flutter">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     :root {
@@ -21,12 +23,19 @@
       --dr7-c5: #50474c;
 
       --dr7-fg: #010101;
+
+      --main-background: hsl(60deg 100% 97%);
+      --card-background: hsl(60deg 100% 99%);
+      --font-color: var(--dr7-fg);
+      /* shadow in light mode only */
+      --card-shadow-color: hsl(0deg 0% 0% / 0.38);
     }
 
     html {
-      background-color: var(--fl-blue-light-light);
+      background-color: var(--main-background);
+      font: -apple-system-body;
       font-family: sans-serif;
-      color: var(--dr7-fg);
+      color: var(--font-color);
     }
 
     body {
@@ -38,16 +47,19 @@
 
     .card {
       position: relative;
-      background-color: var(--dr7-bg-fg);
+      background-color: var(--card-background);
+
       font-family: "Avenir Next";
-      padding: 10pt;
-      border-radius: 3pt;
-      margin-bottom: 10pt;
+      padding: 1rem;
+      border-radius: 10pt;
+      margin-bottom: 1.5rem;
+
+      box-shadow: 4.0px 8.0px 18.0px var(--card-shadow-color);
     }
 
     .card>h2 {
       margin: 0;
-      font-size: 1.3em;
+      font-size: 1.3rem;
     }
 
     h1 {
@@ -59,11 +71,11 @@
     }
 
     ul {
-      padding-inline-start: 17pt;
+      padding-inline-start: 1.4rem;
     }
 
     .technologies {
-      font-size: 0.8em;
+      font-size: 0.8rem;
     }
 
     .calendly {
@@ -77,23 +89,57 @@
     .subline {
       font-family: "Avenir Next";
     }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-background: #000;
+        --card-background: #121212;
+        --font-color: #ededec;
+        --card-shadow-color: hsl(0, 0%, 15%);
+      }
+
+      .card {
+        box-shadow: none;
+      }
+
+      .card>h2 {
+        font-weight: 600;
+      }
+    }
   </style>
 </head>
 
 
 <body>
   <h1>
-    Full-stack developer working exclusively with <span class="fl">Flutter</span> apps since
+    Full-stack mobile app developer working exclusively with <span class="fl">Flutter</span> since
     2019.
   </h1>
 
   <p class="subline">I co-authored the open-source Flutter packages <span style="font-family: monospace;"><a
         href="https://pub.dev/packages/state_queue" target="_blank">state_queue</a></span> and the
     <i>Flutter Favorite</i> <span style="font-family: monospace;"><a href="https://pub.dev/packages/sign_in_with_apple"
-        target="_blank">sign_in_with_apple</a></span>.
+        target="_blank">sign_in_with_apple</a></span>. When possible I like to get involved in the backend, where
+    Go/gRPC are my preferred technologies, which I have deployed at scale with multiple cloud providers.
   </p>
 
   <div id="cards">
+
+    <div class="card">
+      <h2>🇩🇪 Multi-level marketing sales app</h2>
+      <span class="technologies">Flutter, OpenAPI, Local-First</span>
+
+      <ul>
+        <li>Merged two native mobile apps (iOS & Android) into 1 shared codebase</li>
+        <li>Full offline support: all actions are possible without connection, persisted in a local database, and synced
+          once the server can be reached again</li>
+        <li>Extended the feature set, introduced testing (with CI), and automated deployments (CD)</li>
+        <li>Added new and improved APIs via documented OpenAPI endpoints, speeding up client development and
+          correctness</li>
+        <li>Integrated native devices features like camera, document scanning, file handling, and PDF form filling and
+          signing</li>
+      </ul>
+    </div>
 
     <div class="card">
       <h2>🇩🇪 Gym trainer app</h2>
