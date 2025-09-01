@@ -1,276 +1,384 @@
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Full-Stack Mobile App Development with Flutter Focus | LunaONE GmbH
+    </title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="https://www.lunaone.de/flutter" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <title>Flutter | LunaONE GmbH</title>
-  <meta name="robots" content="noindex">
-  <link rel="canonical" href="https://www.lunaone.de/flutter">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    :root {
-      --fl-blue-light: #6fd0f9;
-      --fl-blue-dark: #235699;
-      --fl-blue-light-light: #6fd0f95f;
-
-      --dr7-bg-bg: #d4d8d3;
-      --dr7-bg-fg: #eeefea;
-
-      --dr7-c1: #ae2f25;
-      --dr7-c2: #e15e3e;
-      --dr7-c3: #315b7b;
-      --dr7-c4: #292a2e;
-      --dr7-c5: #50474c;
-
-      --dr7-fg: #010101;
-
-      --main-background: hsl(60deg 100% 97%);
-      --card-background: hsl(60deg 100% 99%);
-      --font-color: var(--dr7-fg);
-      /* shadow in light mode only */
-      --card-shadow-color: hsl(0deg 0% 0% / 0.38);
-    }
-
-    html {
-      background-color: var(--main-background);
-      font: -apple-system-body;
-      font-family: sans-serif;
-      color: var(--font-color);
-    }
-
-    body {
-      margin-left: auto;
-      margin-right: auto;
-      padding: 10pt;
-      max-width: 550px;
-    }
-
-    .card {
-      position: relative;
-      background-color: var(--card-background);
-
-      font-family: "Avenir Next";
-      padding: 1rem;
-      border-radius: 10pt;
-      margin-bottom: 1.5rem;
-
-      box-shadow: 4.0px 8.0px 18.0px var(--card-shadow-color);
-    }
-
-    .card>h2 {
-      margin: 0;
-      font-size: 1.3rem;
-    }
-
-    h1 {
-      font-family: "Baskerville";
-    }
-
-    .fl {
-      color: var(--fl-blue-dark);
-    }
-
-    ul {
-      padding-inline-start: 1.4rem;
-    }
-
-    .technologies {
-      font-size: 0.8rem;
-    }
-
-    .calendly {
-      font-family: "Avenir Next";
-    }
-
-    a {
-      color: var(--fl-blue-dark);
-    }
-
-    .subline {
-      font-family: "Avenir Next";
-    }
-
-    @media (prefers-color-scheme: dark) {
+    <style>
       :root {
-        --main-background: #000;
-        --card-background: #121212;
-        --font-color: #ededec;
-        --card-shadow-color: hsl(0, 0%, 15%);
+        --fl-blue-light: #6fd0f9;
+        --fl-blue-dark: #235699;
+        --fl-blue-light-light: #6fd0f95f;
+
+        --dr7-bg-bg: #d4d8d3;
+        --dr7-bg-fg: #eeefea;
+
+        --dr7-c1: #ae2f25;
+        --dr7-c2: #e15e3e;
+        --dr7-c3: #315b7b;
+        --dr7-c4: #292a2e;
+        --dr7-c5: #50474c;
+
+        --dr7-fg: #010101;
+
+        --main-background: hsl(60deg 100% 97%);
+        --card-background: hsl(60deg 100% 99%);
+        --font-color: var(--dr7-fg);
+        /* shadow in light mode only */
+        --card-shadow-color: hsl(0deg 0% 0% / 0.38);
+      }
+
+      html {
+        background-color: var(--main-background);
+        font: -apple-system-body;
+        font-family: sans-serif;
+        color: var(--font-color);
+      }
+
+      body {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10pt;
+        max-width: 550px;
       }
 
       .card {
-        box-shadow: none;
+        position: relative;
+        background-color: var(--card-background);
+
+        font-family: "Avenir Next";
+        padding: 1rem;
+        border-radius: 10pt;
+        margin-bottom: 1.5rem;
+
+        box-shadow: 4px 8px 18px var(--card-shadow-color);
       }
 
-      .card>h2 {
-        font-weight: 600;
+      .card > h2 {
+        margin: 0;
+        font-size: 1.3rem;
       }
-    }
 
-    .head {
-      border-radius: 15px;
-    }
-  </style>
-</head>
+      h1 {
+        font-family: "Baskerville";
+      }
 
+      .fl {
+        color: var(--fl-blue-dark);
+      }
 
-<body>
-  <h1>
-    Full-stack mobile app developer working exclusively with <span class="fl">Flutter</span> since
-    2019.
-  </h1>
+      ul {
+        padding-inline-start: 1.4rem;
+      }
 
-  <p class="subline">I co-authored the open-source Flutter packages <span style="font-family: monospace;"><a
-        href="https://pub.dev/packages/state_queue" target="_blank">state_queue</a></span> and the
-    <i>Flutter Favorite</i> <span style="font-family: monospace;"><a href="https://pub.dev/packages/sign_in_with_apple"
-        target="_blank">sign_in_with_apple</a></span>. When possible I like to get involved in the backend, where
-    Go/gRPC are my preferred technologies, which I have deployed at scale with multiple cloud providers.
+      .technologies {
+        font-size: 0.8rem;
+      }
+
+      .calendly {
+        font-family: "Avenir Next";
+      }
+
+      a {
+        color: var(--fl-blue-dark);
+      }
+
+      .subline {
+        font-family: "Avenir Next";
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --main-background: #000;
+          --card-background: #121212;
+          --font-color: #ededec;
+          --card-shadow-color: hsl(0, 0%, 15%);
+        }
+
+        .card {
+          box-shadow: none;
+        }
+
+        .card > h2 {
+          font-weight: 600;
+        }
+      }
+
+      .head {
+        border-radius: 15px;
+      }
+
+      .headBW {
+        border-radius: 60px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      class="subline"
+      style="display: flex; justify-content: space-between; align-items: center"
+    >
+      <h1>
+        Hi, I'm <a href="https://timm.preetz.name/">Timm</a>, an expert
+        full-stack mobile app developer based in Munich.
+      </h1>
+
+      <img
+        src="/assets/timm_head_ava_bw.jpg"
+        width="120"
+        height="120"
+        class="headBW"
+      />
+    </div>
+
+    <p class="subline">
+      Since 2019 I have focused exclusively on writing
+      <span class="fl">Flutter</span>-based frontends. I maintain the
+      open-source Flutter packages
+      <span style="font-family: monospace"
+        ><a href="https://pub.dev/packages/passkeys_server" target="_blank"
+          >passkeys_server</a
+        ></span
+      >,
+      <span style="font-family: monospace"
+        ><a href="https://pub.dev/packages/indexed_entity_store" target="_blank"
+          >indexed_entity_store</a
+        ></span
+      >,
+      <span style="font-family: monospace"
+        ><a href="https://pub.dev/packages/state_queue" target="_blank"
+          >state_queue</a
+        ></span
+      >
+      and the <i>Flutter Favorite</i>
+      <span style="font-family: monospace"
+        ><a href="https://pub.dev/packages/sign_in_with_apple" target="_blank"
+          >sign_in_with_apple</a
+        ></span
+      >
+      and its
+      <span style="font-family: monospace"
+        ><a
+          href="https://pub.dev/packages/sign_in_with_apple_server"
+          target="_blank"
+          >server counterpart</a
+        ></span
+      >. When possible I like to get involved in the backend, where
+      <i>Go & gRPC</i> are my preferred technologies, which I have deployed at
+      scale in both AWS and GCP.
+    </p>
+
+    <p class="subline">
+      Feel free to reach out to discuss your project via<br />
+      ☞ <a href="mailto:timm@lunaone.de?subject=Intro">email</a>,
+      <a
+        href="https://signal.me/#eu/_O0oQsRaoD06zYxEi5gDVAtseTinzhTbBxJC8-W-o2LsSZmrslNHx4isFW40J3Pk"
+        >Signal</a
+      >, or <a href="https://wa.me/message/UUMGUE7LENBRE1">WhatsApp</a>.
+    </p>
 
     <br />
 
+    <h2>Recent projecets</h2>
 
-  <div class="subline" style="display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      Feel free to reach out to Timm to discuss your project via<br />
-      ☞ <a href="mailto:office@lunaone.de?subject=Intro">email</a>,
-      <a href="https://signal.me/#eu/_O0oQsRaoD06zYxEi5gDVAtseTinzhTbBxJC8-W-o2LsSZmrslNHx4isFW40J3Pk">Signal</a>, or
-      <a href="https://wa.me/message/UUMGUE7LENBRE1">WhatsApp</a>.
+    <div id="cards">
+      <div class="card">
+        <h2>🇸🇪 Server framework for Flutter app backends</h2>
+        <span class="technologies"
+          >Dart, Flutter, PostgreSQL, Google Cloud</span
+        >
 
-    </div>
-    <img src="/assets/timm_head_ava.jpg" width="30" height="30" class="head">
-  </div>
-  </p>
-
-  <div id="cards">
-
-    <div class="card">
-      <h2>🇸🇪 Server framework for Flutter app backends</h2>
-      <span class="technologies">Dart, Flutter, PostgreSQL, Google Cloud</span>
-
-      <ul>
-        <li>Improved the database migration engine to handle more edge cases </li>
-        <li>Added support for Dart record and container types in the client-server protocol and data storage</li>
-        <li>Created the next generation authentication module
-          <br />Updated the social logins; adding JWT, passkey,
-          and magic link support; integrated hooks for 2FA
-        </li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>🇩🇪 Multi-level marketing sales app</h2>
-      <span class="technologies">Flutter, OpenAPI, Local-First</span>
-
-      <ul>
-        <li>Merged two native mobile apps (iOS & Android) into 1 shared codebase</li>
-        <li>Full offline support: all actions are possible without connection, persisted in a local database, and synced
-          once the server can be reached again</li>
-        <li>Extended the feature set, introduced testing (with CI), and automated deployments (CD)</li>
-        <li>Added new and improved APIs via documented OpenAPI endpoints, speeding up client development and
-          correctness</li>
-        <li>Integrated native devices features like camera, document scanning, file handling, and PDF form filling and
-          signing</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>🇩🇪 Gym trainer app</h2>
-      <span class="technologies">Flutter, OpenAPI, Figma</span>
-
-      <ul>
-        <li>Developed mobile app from scratch, on top of the web app's API</li>
-        <li>Replicated the very granular permission system on the client</li>
-        <li>Utilized feature scopes, with extensive unit and golden testing for each part</li>
-        <li>Responsible for the app releases on both stores</li>
-        <li>Implemented native plug-ins for document scanning smooth camera access</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>🇯🇴 Arabic language chatbot app</h2>
-      <span class="technologies">Flutter, Go, gRPC, Google Cloud, Figma, RevenueCat</span>
-
-      <ul>
-        <li>Built MVP ready for store release within 3 months</li>
-        <li>Client provided their own tailored GTP-style LLM, whereas we were responsible for building the app according
-          to the app design</li>
-        <li>Build Go-based backend to handle the user management, in-app subscriptions, chat history, and quotas</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>🇩🇪 Fitness course booking app</h2>
-      <span class="technologies">Flutter, OpenAPI, Sketch/Zeplin, Firebase, RevenueCat</span>
-
-      <ul>
-        <li>Helped the client extend their existing app with an increasing number of whitelabels (requiring custom
-          design and behavior)</li>
-        <li>Implemented the technical side of a new, unified design system across all apps</li>
-        <li>Added in-app subscriptions</li>
-        <li>Lead the implementation of various features</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>🇸🇪 Team video-conference and chat app</h2>
-      <span class="technologies">Flutter, Go, AWS</span>
-
-      <ul>
-        <li>Readied a Flutter web based chat and video-conferencing app for release</li>
-        <li>Replaced the homegrown API with a standard Go/gRPC backend on AWS ECS to be able to horizontally scale the
-          chat rooms and real-time notifications</li>
-        <li>Handled the integration with the video calling provider in frontend and backend</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>🇺🇸 Farm management app</h2>
-      <span class="technologies">Flutter, GitLab, CodeMagic</span>
-
-      <ul>
-        <li>Support with "AppOps" tasks (CI, Flutter upgrades, native plug-ins)</li>
-        <li>Set up CI on GitLab and CD with CodeMagic</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>🇩🇪 Fashion e-commerce app</h2>
-      <span class="technologies">Flutter, Go, gRPC, AWS</span>
-
-      <ul>
-        <li>Rebuild existing ReactNative app in Flutter</li>
         <ul>
-          <li>4.2 → 4.8 ⭐️ average app store reviews with similar functionality due to improved performance and
-            stability</li>
+          <li>
+            Improved the database migration engine to handle more edge cases
+          </li>
+          <li>
+            Added support for Dart record and container types in the
+            client-server protocol and data storage
+          </li>
+          <li>
+            Created the next generation authentication module <br />Updated the
+            social logins; adding JWT, passkey, and magic link support;
+            integrated hooks for 2FA
+          </li>
         </ul>
-        <li>Built app-specific backend in Go to optimize for mobile latency (ideally 1 request per page)</li>
+      </div>
+
+      <div class="card">
+        <h2>🇩🇪 Multi-level marketing sales app</h2>
+        <span class="technologies">Flutter, OpenAPI, Local-First</span>
+
         <ul>
-          <li>Built atop gRPC for maximum performance and its support in being fully backwards compatible with older
-            versions</li>
+          <li>
+            Merged two native mobile apps (iOS & Android) into 1 shared codebase
+          </li>
+          <li>
+            Full offline support: all actions are possible without connection,
+            persisted in a local database, and synced once the server can be
+            reached again
+          </li>
+          <li>
+            Extended the feature set, introduced testing (with CI), and
+            automated deployments (CD)
+          </li>
+          <li>
+            Added new and improved APIs via documented OpenAPI endpoints,
+            speeding up client development and correctness
+          </li>
+          <li>
+            Integrated native devices features like camera, document scanning,
+            file handling, and PDF form filling and signing
+          </li>
         </ul>
-        <li>Added in-depth monitoring (FE: Sentry, BE: NewRelic) and custom app-specific scaling scripts for AWS
-          ECS/Fargate </li>
-      </ul>
+      </div>
+
+      <div class="card">
+        <h2>🇩🇪 Gym trainer app</h2>
+        <span class="technologies">Flutter, OpenAPI, Figma</span>
+
+        <ul>
+          <li>
+            Developed mobile app from scratch, on top of the web app's API
+          </li>
+          <li>Replicated the very granular permission system on the client</li>
+          <li>
+            Utilized feature scopes, with extensive unit and golden testing for
+            each part
+          </li>
+          <li>Responsible for the app releases on both stores</li>
+          <li>
+            Implemented native plug-ins for document scanning smooth camera
+            access
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🇯🇴 Arabic language chatbot app</h2>
+        <span class="technologies"
+          >Flutter, Go, gRPC, Google Cloud, Figma, RevenueCat</span
+        >
+
+        <ul>
+          <li>Built MVP ready for store release within 3 months</li>
+          <li>
+            Client provided their own tailored GTP-style LLM, whereas we were
+            responsible for building the app according to the app design
+          </li>
+          <li>
+            Build Go-based backend to handle the user management, in-app
+            subscriptions, chat history, and quotas
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🇩🇪 Fitness course booking app</h2>
+        <span class="technologies"
+          >Flutter, OpenAPI, Sketch/Zeplin, Firebase, RevenueCat</span
+        >
+
+        <ul>
+          <li>
+            Helped the client extend their existing app with an increasing
+            number of whitelabels (requiring custom design and behavior)
+          </li>
+          <li>
+            Implemented the technical side of a new, unified design system
+            across all apps
+          </li>
+          <li>Added in-app subscriptions</li>
+          <li>Lead the implementation of various features</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🇸🇪 Team video-conference and chat app</h2>
+        <span class="technologies">Flutter, Go, AWS</span>
+
+        <ul>
+          <li>
+            Readied a Flutter web based chat and video-conferencing app for
+            release
+          </li>
+          <li>
+            Replaced the homegrown API with a standard Go/gRPC backend on AWS
+            ECS to be able to horizontally scale the chat rooms and real-time
+            notifications
+          </li>
+          <li>
+            Handled the integration with the video calling provider in frontend
+            and backend
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🇺🇸 Farm management app</h2>
+        <span class="technologies">Flutter, GitLab, CodeMagic</span>
+
+        <ul>
+          <li>
+            Support with "AppOps" tasks (CI, Flutter upgrades, native plug-ins)
+          </li>
+          <li>Set up CI on GitLab and CD with CodeMagic</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🇩🇪 Fashion e-commerce app</h2>
+        <span class="technologies">Flutter, Go, gRPC, AWS</span>
+
+        <ul>
+          <li>Rebuild existing ReactNative app in Flutter</li>
+          <ul>
+            <li>
+              4.2 → 4.8 ⭐️ average app store reviews with similar functionality
+              due to improved performance and stability
+            </li>
+          </ul>
+          <li>
+            Built app-specific backend in Go to optimize for mobile latency
+            (ideally 1 request per page)
+          </li>
+          <ul>
+            <li>
+              Built atop gRPC for maximum performance and its support in being
+              fully backwards compatible with older versions
+            </li>
+          </ul>
+          <li>
+            Added in-depth monitoring (FE: Sentry, BE: NewRelic) and custom
+            app-specific scaling scripts for AWS ECS/Fargate
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 
+    <span class="calendly">
+      Sounds good? Let's talk about your project then! Book a consultation
+      <a href="https://calendly.com/lunaone/first-consultation" target="_blank"
+        >right now via Calendly</a
+      >.
+    </span>
 
-  <span class="calendly">
-    Sounds good? Let's talk about your project then! Book a consultation <a
-      href="https://calendly.com/lunaone/first-consultation" target="_blank">right now via Calendly</a>.
-  </span>
+    <br />
+    <br />
+    <br />
 
-
-
-  <br />
-  <br />
-  <br />
-
-  <center>
-    <a href="https://www.lunaone.de/">
-      <img src="https://www.lunaone.de/icon_white.svg" height=30 style="filter: invert(80%)" />
-    </a>
-  </center>
-</body>
-
+    <center>
+      <a href="https://www.lunaone.de/">
+        <img
+          src="https://www.lunaone.de/icon_white.svg"
+          height="30"
+          style="filter: invert(80%)"
+        />
+      </a>
+    </center>
+  </body>
 </html>
